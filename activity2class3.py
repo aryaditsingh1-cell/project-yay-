@@ -1,0 +1,9 @@
+x=5.0
+y=int(x)
+print(y)
+a="10"
+b=float(a)
+print(b)
+x=10
+y=float(x)
+print(y)
