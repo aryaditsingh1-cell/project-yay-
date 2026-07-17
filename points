@@ -1,0 +1,46 @@
+# ============================================================
+# I GET POINTS YOU GET POINTS WE ALL GET POINTS YAY
+# ============================================================
+team1 = 10000
+team2 = 95
+team3 = 140
+team4 = 110
+team5 = 85
+ 
+total = team1 + team2 + team3 + team4 + team5
+average = total / 5
+ 
+print("Total points       :", total)
+print("Average per team   :", average)
+ 
+stars_per_point = 2
+reward_stars = total * stars_per_point
+print("YOUR STAR REWARD :", reward_stars)
+ 
+
+boxes = reward_stars // 25
+leftover = reward_stars % 25
+ 
+print("FULL BOXES PACKED C: :", boxes)
+print("LEFTOVERS D:  :", leftover)
+ 
+
+last_week = 500
+ 
+print("IS IT BETTER :/ :", total > last_week)
+print("IS IT SAME :l    :", total == last_week)
+print("AT LEAST AS GOOD :D  :", total >= last_week)
+ 
+
+total += 30
+print("AFTER BONUS POINTS :D :", total)
+
+total -= 120
+print("MISSED TASKS AFTER D: :", total)
+ 
+reward_stars = total * stars_per_point
+boxes = reward_stars // 25
+ 
+print("THE END OF THE BOX PACKING :D :", boxes)
+
+print("THIS WAS MADE BY ARYADIT AND CODINGAL")
