@@ -1,0 +1,8 @@
+
+
+birthday_list = ["Bob", "Alice", "Charlie", "Diana", "Eve"]
+
+birthday_dates_list=["october 10, 1990", "january 15, 1985", "march 22, 1992", "july 30, 1988", "december 5, 1995"]
+
+print("birthday_list:", birthday_list)
+print("birthday_dates_list:", birthday_dates_list)
