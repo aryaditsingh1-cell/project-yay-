@@ -1,8 +1,10 @@
 
 
-birthday_list = ["Bob", "Alice", "Charlie", "Diana", "Eve"]
+birthday_list = ["dog", "skog", "log", "rob", "bob"]
 
-birthday_dates_list=["october 10, 1990", "january 15, 1985", "march 22, 1992", "july 30, 1988", "december 5, 1995"]
+birthday_dates_list=["october 10, 2090", "january 15, 3085", "march 22, 92", "july 30, 2088", "december 5, 2020"]
 
 print("birthday_list:", birthday_list)
 print("birthday_dates_list:", birthday_dates_list)
+
+# i 
