@@ -1,0 +1,51 @@
+print("==================================")
+
+print("=== Library Visit Planner ===")
+print("Answer 3 quick questions and I will plan your library visit!\n")
+
+day       = input("WHAT DAY IS IT? (Monday to Sunday): ").strip().capitalize()
+weather   = input("WHAT WEATHER? (sunny / rainy / cloudy): ").strip().lower()
+book_due  = input("YOU GOT A BOOK TO RETURN? (yes / no): ").strip().lower()
+
+print()
+print(f"=== THIS IS YOUR LIBRARY PLAN FOR {day} ===")
+print("-" * 35)
+
+if day in ("Saturday", "Sunday"):
+    print("DAY    : Weekend - I DONT THINK YOUR SCHOOL LIBRARY IS OPEN TODAY. Check the library hours before you go.")
+elif day == "Monday":
+    print("DAY    : ITS THE START OF THE WEEK MAKE SURE THAT YOU DONT HAVE OVERDUE BOOKS.")
+elif day == "Friday":
+    print("DAY    : ITS THE LAST WEEKDAY YOU SHOULD RETURN OR YOU GETTING FINES (probaly not unless you have a lot of books overdue).")
+elif day in ("Tuesday", "Wednesday", "Thursday"):
+    print("DAY    : ITS A NORMAL DAY FOR A LIBRARY VISIT SURE YOU CAN GO.")
+else:
+    print("DAY    : WHAT DAY ARE YOU EVEN GOING ON ABOUT CHECK THE SPELLING AND DAY.")
+
+if weather == "sunny" and book_due == "yes":
+    print("WEATHER TIP : ITS SOME GOOD WEATHER YOU SHOULD GO GET A BOOK AND BREATHE THE FRESH AIR.")
+
+if weather == "rainy" or weather == "cloudy":
+    print("WEATHER TIP :BEST IS THAT YOU SHOULD GET AN UMBRELLA AND STAY INSIDE.")
+
+
+if not (book_due == "yes"):
+    print("BOOK STATUS : YOU DONT HAVE A BOOK TO RETURN TODAY. YOU CAN JUST GO AND READ OR STUDY AND DONT WORRY ABOUT FINES.")
+
+
+if weather == "rainy" and book_due == "yes":
+    print("Best plan   : YOU SHOULD RETURN IT BEFORE THE OVERDUE DATE STRIKES AND BE CAREFUL OF RAIN.")
+elif weather == "sunny" and book_due == "yes" and not (day in ("Saturday", "Sunday")):
+    print("Best plan   : YOU SHOULD GO TO THE LIBRARY AND RETURN BEFORE DUE DATE.")
+elif day in ("Saturday", "Sunday") and weather == "sunny":
+    print("Best plan   : YOU CAN GO AND HAVE A GREAT TIME AT THE LIBRARY!")
+else:
+    print("Best plan   :YOU SHOULD CHECK THE LIBRARY HOURS AND PLAN ACCORDINGLY.")
+
+print()
+print("LIBRARY VISIT PLAN COMPLETE!")
+print("THANK YOU FOR USING THE LIBRARY VISIT PLANNER!")
+print("PLEASE COME BACK TOMORROW FOR MORE LIBRARY PLANS!")
+print("GOODBYE!")
+print("==================================")
+
