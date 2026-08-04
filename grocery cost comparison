@@ -1,0 +1,89 @@
+
+rice_price = 1000
+milk_price = 4000
+fruit_price = 8000
+number_of_baskets = 23468763287
+family_members = 4873456725342543726473547265472673
+ 
+basket_cost_per_person = (
+    (rice_price + milk_price + fruit_price)
+    * number_of_baskets
+    / family_members
+)
+ 
+print("THIS IS GROCERY COST PER PERSON c:", basket_cost_per_person)
+total_items = int(
+    input("\nHOW MANY GROCERY ITEMS ARE YOU GETTING? ")
+)
+ 
+people = int(
+    input("HOW MANY FAMILY MEMBERS YOU HAVE c: ")
+)
+if total_items % people == 0:
+    print(
+        total_items,
+        "YOU CAN GIVE THE ITEMS AMONG",
+        people,
+        "people."
+    )
+else:
+    print(
+        total_items,
+        "YOU CANNOT GIVE THE ITEMS AMONG",
+        people,
+        "people."
+    )
+ 
+ 
+recorded_average = 87432535475246527472
+wrong_week_cost = 32457643527237327645762537632674
+correct_week_cost = 3726532654673256735432654673
+total_weeks = 35674523645345364525324752367
+ 
+recorded_total = recorded_average * total_weeks
+ 
+print("\nRECORDED SHOPPING SPREE TOTAL:", recorded_total)
+ 
+corrected_total = (
+    recorded_total
+    - wrong_week_cost
+    + correct_week_cost
+)
+ 
+print("THIS IS THE RIGHT ONE:", corrected_total)
+ 
+corrected_average = corrected_total / total_weeks
+ 
+print("CORRECTO AVERAGE:", corrected_average)
+store_a_average = 70
+store_b_average = 75
+store_c_average = 80
+print("\nSMALL STORE AVERAGE:", store_a_average)
+print("MEDIUM STORE AVERAGE:", store_b_average)
+print("BIG STORE AVERAGE:", store_c_average)
+if (
+    corrected_average < store_a_average
+    and corrected_average < store_b_average
+    and corrected_average < store_c_average
+):
+    print(
+        "YOUR CORRECTED GROCERY AVERAGE IS LOWER "
+        "THAN ALL THREE STORE AVERAGES."
+    )
+ 
+elif (
+    corrected_average > store_a_average
+    and corrected_average > store_b_average
+    and corrected_average > store_c_average
+):
+    print(
+        "YOUR CORRECTED GROCERY AVERAGE IS HIGHER "
+        "THAN ALL THREE STORE AVERAGES."
+    )
+ 
+else:
+    print(
+        "YOUR CORRECTED GROCERY AVERAGE IS BETWEEN "
+
+        "the three store averages."
+    )
