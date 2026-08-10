@@ -1,0 +1,4 @@
+powers_list = ["5**4", "8**5", "4**5", "9**2", "1**6", "7**9"]
+print("The powers are:")
+for power in powers_list:
+    print(int(eval(power)))
