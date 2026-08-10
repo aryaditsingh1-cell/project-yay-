@@ -1,0 +1,124 @@
+# Holiday Activity Planner
+# Lesson: Nested Conditional Statements
+ 
+print("====================================")
+print("    Welcome to Holiday Planner!     ")
+print("====================================")
+print()
+ 
+print("PICK THE TYPE OF HOLIDAY YOU WANT TO PLAN")
+print("  1 - TROPICAL HOLIDAY")
+print("  2 - FROSTY HOLIDAY")
+print("  3 - CRUISE HOLIDAY")
+print()
+ 
+choice = int(input("Enter 1 or 2 or 3: "))
+print()
+ 
+if choice == 1:
+    # Nested if-else - runs only when choice is 1
+    print("Step 2:PICK A TROPICAL ACTIVITY")
+    print("  1 - Swimming")
+    print("  2  - SURFING")
+    print("  3 - SNORKELING")
+    print("  4 - DIVING")
+    print()
+ 
+    tropical_activity = int(input("Enter 1 or 2: "))
+    print()
+ 
+    if tropical_activity == 1:
+        print("You picked  : Swimming")
+        print("Best time   : Morning")
+        print("Remember    : Carry sunscreen and water")
+    elif tropical_activity == 2:
+        print("You picked  : Surfing")
+        print("Best time   : Afternoon")
+        print("Remember    : Carry a towel and surfboard")
+    elif tropical_activity == 3:
+        print("You picked  : Snorkeling")
+        print("Best time   : Midday")
+        print("Remember    : Carry a mask and fins")
+    elif tropical_activity == 4:
+        print("You picked  : Diving")
+        print("Best time   : Early morning")
+        print("Remember    : Carry a wetsuit and regulator")
+ 
+elif choice == 2:
+    # Nested if-else - runs only when choice is 2
+    print("Step 2:PICK A FROSTY ACTIVITY")
+    print("  1 - Skiing")
+    print("  2 - Snowboarding")
+    print("  3 - Ice Skating")
+    print("  4 - Sledding")
+    print()
+
+    frosty_activity = int(input("Enter 1 or 2 or 3 or 4: "))
+    print()
+
+    if frosty_activity == 1:
+        print("You picked  : Skiing")
+        print("Best time   : Morning")
+        print("Remember    : Carry ski poles and helmet")
+    elif frosty_activity == 2:
+        print("You picked  : Snowboarding")
+        print("Best time   : Afternoon")
+        print("Remember    : Carry a snowboard and gloves")
+    elif frosty_activity == 3:
+        print("You picked  : Ice Skating")
+        print("Best time   : Midday")
+        print("Remember    : Carry ice skates and warm clothes")
+    elif frosty_activity == 4:
+        print("You picked  : Sledding")
+        print("Best time   : Early evening")
+        print("Remember    : Carry a sled and warm clothes")
+
+elif choice == 3:
+    # Nested if-else - runs only when choice is 3
+    print("Step 2:PICK A CRUISE ACTIVITY")
+    print("  1 - going to the water slides")
+    print("  2 - going to the pool on the ship")
+    print("  3 - going to the spa on the ship")
+    print("  4 - going to the casino on the ship")
+    print("  5 - going to the restaurant on the ship")
+    print("  6 - going to sleep on the ship")
+    print()
+
+    cruise_activity = int(input("Enter 1 or 2 or 3 or 4 or 5 or 6: "))
+    if cruise_activity == 1:
+        print("You picked  : Going to the water slides")
+        print("Best time   : Afternoon")
+        print("Remember    : Carry a towel and sunscreen")
+    elif cruise_activity == 2:
+        print("You picked  : Going to the pool on the ship")
+        print("Best time   : Midday")
+        print("Remember    : Carry swimwear and a hat")
+    elif cruise_activity == 3:
+        print("You picked  : Going to the spa on the ship")
+        print("Best time   : Evening")
+        print("Remember    : Carry a bathrobe and slippers")
+    elif cruise_activity == 4:
+        print("You picked  : Going to the casino on the ship")
+        print("Best time   : Nighttime")
+        print("Remember    : Carry cash and a valid ID")
+    elif cruise_activity == 5:
+        print("You picked  : Going to the restaurant on the ship")
+        print("Best time   : Dinner time")
+        print("Remember    : Carry a valid reservation and a jacket")
+    elif cruise_activity == 6:
+        print("You picked  : Going to sleep on the ship")
+        print("Best time   : Late evening")
+        print("Remember    : Carry pajamas and a nightcap")
+    else:
+        print("That was not a valid choice.")
+        print("Please enter 1 through 6 for cruise activities.")
+
+else:
+    print("That was not a valid choice.")
+    print("Please enter 1 for Tropical Holiday or 2 for Frosty Holiday or 3 for Cruise Holiday.")
+
+print()
+print("====================================")
+print("   Your holiday plan is ready!      ")
+print("  go fly to your destination and enjoy!  ")        
+print("====================================")
