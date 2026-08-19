@@ -1,0 +1,7 @@
+rows = int(input("please ENTER TOTAL ROWS: "))
+number = 1
+for r in range(rows):
+    for c in range(r + 1):
+        print(number, end=" ")
+        number += 1
+    print()
