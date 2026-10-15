@@ -1,0 +1,12 @@
+grade_book = dict(name="red", score1=90, name2="blue", score2=45,name3="green", score3=75,name4="sir", score4=100,name5="goofy", score5=81)
+minimum_score=int(min(grade_book.values()))
+print("Minimum score is:", minimum_score)
+maximum_score = int(max(grade_book.values()))
+print("Maximum score is:", maximum_score)
+red_score = grade_book.get("score1", 0)
+print("Red's score is:", red_score)
+for average in range(5):
+    print(f"Average score is: {int(sum(grade_book.values()) / len(grade_book))}") 
+user_student = str(input("what student would you like to find?: "))
+student_score = grade_book.get(user_student, 0)
+print(f"{user_student}'s score is: {student_score}")
